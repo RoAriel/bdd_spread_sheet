@@ -19,6 +19,12 @@ public class IntencionVenta {
         this.precioVenta = precioVenta;
     }
 
+    public IntencionVenta(PromoFaso dosxuno, int precioVenta) {
+        this.items= new ArrayList<Item>();
+        this.items.add(dosxuno);
+        this.precioVenta = precioVenta;
+    }
+
     public double renta() {
         return Math.max(0,this.precioVenta - this.costoAcumulado());
     }

@@ -1,4 +1,9 @@
-package PACKAGE_NAME;
+public class PromoFaso extends Item {
+    public PromoFaso(float costo) {
+    }
 
-public class PromoFaso {
+    @Override
+    public double getCosto() {
+        return 40;
+    }
 }

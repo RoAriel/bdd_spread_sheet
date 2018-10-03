@@ -73,4 +73,15 @@ public class ChinoTest {
 
         assertEquals(119.992, actual, 0.001);
     }
+
+    @Test
+    public void diegoCompraPromo2x1DeFaso150ChinoCompraFasoA20(){
+        PromoFaso dosxuno = new PromoFaso(20);
+        IntencionVenta venta = new IntencionVenta(dosxuno,150);
+
+        double actual = venta.renta();
+
+        assertEquals(110,actual, 0.001);
+    }
+
 }
